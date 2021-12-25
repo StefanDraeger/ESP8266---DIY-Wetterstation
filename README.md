@@ -4,4 +4,4 @@ libs
 examples
 - Button
   - Taster & LED
-  - Taster & Piezo Buzzer
+  - [Taster & Piezo Buzzer](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/button/button_buzzer)
