@@ -7,9 +7,12 @@
    - als ZIP-Datei vom Repository [thomasfredericks / Bounce2](https://github.com/thomasfredericks/Bounce2) kopiert
 
 ### Beispiele
+- Buzzer
+	- [Sirene](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/buzzer/buzzer_simple_sound)
 - Button
   - [Taster & LED](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/button/button_led)
   - [Taster & Piezo Buzzer](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/button/button_buzzer)
+
 
 ### Pinout der Sensoren / Aktoren
 
