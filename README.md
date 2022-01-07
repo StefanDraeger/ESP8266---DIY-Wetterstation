@@ -6,6 +6,8 @@
 ### Bibliotheken
 - [Bounce2](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/libs/Bounce2)
    - als ZIP-Datei vom Repository [thomasfredericks / Bounce2](https://github.com/thomasfredericks/Bounce2) kopiert
+ - [Adafruit SSD1306 OLED Display](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/libs/OLED)
+	 - als ZIP-Dateien von Repositories [adafruit / Adafruit-GFX-Library](https://github.com/adafruit/Adafruit-GFX-Library) & [stblassitude / Adafruit_SSD1306_Wemos_OLED](https://github.com/stblassitude/Adafruit_SSD1306_Wemos_OLED)
 
 ### Beispiele
 - Buzzer
