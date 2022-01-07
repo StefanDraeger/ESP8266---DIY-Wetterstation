@@ -15,13 +15,13 @@ void setup()   {
   display.display();
 }
 void loop() {
-  //for (int i = 0; i < 9999;i++) {
+  for (int i = 0; i < 9999;i++) {
     display.clearDisplay();
     display.setTextSize(2);
     display.setTextColor(WHITE);
     display.setCursor(60, 5);
-    display.println("99999");
+    display.println(i);
     display.display();
     delay(125);
-  //}
+  }
 }
