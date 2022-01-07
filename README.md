@@ -12,6 +12,9 @@ Nachfolgend nun die benötigten Bibliotheken für die Programmierung in der [Ard
  - [DHTesp](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/libs/DHT11)
 	 - als ZIP-Datei vom Respository [beegee-tokyo / DHTesp](https://github.com/beegee-tokyo/DHTesp)
 
+### Programm
+Das Programm für die DIY Wetterstation in der Version 2 findest du auf diesem Respository im Ordner [DIY-Weatherstation-V2](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/DIY-Weatherstation-V2/diyWeatherstationV2). Dieses Programm  ist in der Arduino IDE entwickelt und zeigt per Knopfdruck auf dem OLED Display die verschiedenen Sensorwerte an.
+
 ### Beispiele
 - Buzzer
 	- [Sirene](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/buzzer/buzzer_simple_sound)
@@ -21,6 +24,8 @@ Nachfolgend nun die benötigten Bibliotheken für die Programmierung in der [Ard
 - OLED Display
 	- [Schleife von 0 bis 9999](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/oled_display/oled_display_numbers)
 	- [Taster zum hochzählen](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/oled_display/oled_display_button)
+-  DHT11 Sensor
+	- [Sensordaten auf dem OLED Display anzeigen](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/dht11/dht11_oled_display)
  
 
 
