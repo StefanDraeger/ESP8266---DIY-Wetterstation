@@ -28,6 +28,9 @@ Hier nun einpaar Beispiele wie du die einzelnen Sensoren / Aktoren auf der Plati
 	- [Taster zum hochzählen](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/oled_display/oled_display_button)
 -  DHT11 Sensor
 	- [Sensordaten auf dem OLED Display anzeigen](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/dht11/dht11_oled_display)
+- UV-Sensor
+	- [Ausgabe auf der seriellen Schnittstelle](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/uv_sensor/uv_sensor_serial)
+	- [Ausgabe auf dem OLED Display](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/uv_sensor/uv_sensor_oled_display)
  
 
 
