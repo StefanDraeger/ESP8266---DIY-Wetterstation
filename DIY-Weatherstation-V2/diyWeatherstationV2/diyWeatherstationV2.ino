@@ -5,6 +5,9 @@
 #include "DHTesp.h"
 #include <Bounce2.h>
 
+#include "uvsensor.h"
+#include "dht11.h"
+
 // Taster auf D5 - GPIO14
 #define btnPin D5
 
@@ -15,14 +18,13 @@ Bounce2::Button button = Bounce2::Button();
 #define OLED_RESET 0
 Adafruit_SSD1306 display(OLED_RESET);
 
-DHTesp dht;
-
 const int DHT11_HUMIDITY = 1;
 const int DHT11_TEMP = 2;
+const int UV_SENSOR = 3;
 
-const int MAX_SENSOR_VALUES = 2;
+const int MAX_SENSOR_VALUES = 3;
 
-int sensorValueIndex = 1;
+int sensorValueIndex = 0;
 
 void setup()   {
   Serial.begin(9600);
@@ -35,13 +37,16 @@ void setup()   {
   // DHT11 Sensor am D6, GPIO12
   dht.setup(12, DHTesp::DHT11);
 
+  // PIN des UV Sensors als Eingang definieren
+  pinMode(uvSensorIn, INPUT);
+
   // "verbinden" des Tasters"
   button.attach( btnPin, INPUT );
   // entprellen mit 5ms
   button.interval(5);
   // wenn der Taster gedrück wurde ist das Signal "LOW"
   button.setPressedState(LOW);
-  displayDht11Value("click me", "");
+  displayValue("click me", "");
 }
 
 void loop() {
@@ -50,9 +55,6 @@ void loop() {
 
   // Wenn der Taster gedrück wurde, dann mache...
   if ( button.pressed() ) {
-    delay(dht.getMinimumSamplingPeriod());
-    float luftfeuchtigkeit = dht.getHumidity();
-    float temperatur = dht.getTemperature();
     
     if (sensorValueIndex >= MAX_SENSOR_VALUES) {
       sensorValueIndex = 1;
@@ -65,10 +67,13 @@ void loop() {
 
     switch (sensorValueIndex) {
       case DHT11_HUMIDITY:
-        displayDht11Value("Humidity:", String(luftfeuchtigkeit, 2) + "%");
+        displayValue("Humidity:", getDht11HumidityValue());
         break;
       case DHT11_TEMP:
-        displayDht11Value("Temp.:", String(temperatur, 2) + "C");
+        displayValue("Temp.:", getDht11TempValue());
+        break;
+      case UV_SENSOR:
+        displayValue("UV Sensor:", getUvSensorValue());
         break;
       default:
         Serial.println("switch default");
@@ -77,7 +82,7 @@ void loop() {
   }
 }
 
-void displayDht11Value(String text, String value) {
+void displayValue(String text, String value) {
   display.clearDisplay();
   display.setTextSize(1);
   display.setTextColor(WHITE);
