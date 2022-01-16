@@ -38,7 +38,7 @@ Hier nun ein paar Beispiele, wie du die einzelnen Sensoren / Aktoren auf der Pla
 - WiFi
 	- [Aufbau einer WiFi Verbindung](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/wifi/esp8266_simple_wifi_connection)
 	- [erstellen einer einfachen Webseite für Sensordaten](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/wifi/esp8266_webpage_sensor_data)
-	- [senden von Sensordaten an ThingSpeak]()
+	- [senden von Sensordaten an ThingSpeak](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/wifi/esp8266_thingspeak_sensor_data)
 
 ### Mikrocontroller ESP8266 
 ![Wemos D1 Mini - ESP8266](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/esp8266.jpg)
