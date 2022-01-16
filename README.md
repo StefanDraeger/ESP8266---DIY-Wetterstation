@@ -17,6 +17,29 @@ Nachfolgend nun die benötigten Bibliotheken für die Programmierung in der [Ard
 ### Programm
 Das Programm für die DIY Wetterstation in der Version 2 findest du auf diesem Respository im Ordner [DIY-Weatherstation-V2](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/DIY-Weatherstation-V2/diyWeatherstationV2). Dieses Programm  ist in der Arduino IDE entwickelt und zeigt per Knopfdruck auf dem OLED Display die verschiedenen Sensorwerte an.
 
+### Mikrocontroller ESP8266 
+![enter image description here](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/esp8266.jpg)
+#### Technische Daten
+
+### Sensoren
+Auf der DIY Weatherstation V2 sind folgende Sensoren / Aktoren verbaut:
+
+#### OLED Display
+![enter image description here](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/oled_display.jpg)
+##### Technische Daten
+#### DHT11 Sensor
+![enter image description here](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/dht11.jpg)
+##### Technische Daten
+#### BMP180 Sensor
+![enter image description here](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/bmp180.jpg)
+##### Technische Daten
+#### UV-Sensor
+![enter image description here](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/uv_sensor.jpg)
+##### Technische Daten
+#### Piezo Buzzer
+#### Taster
+#### LED
+
 ### Beispiele
 Hier nun ein paar Beispiele, wie du die einzelnen Sensoren / Aktoren auf der Platine programmieren kannst. Und somit Stück für Stück die Funktionen der DIY Wetterstation V2 zu programmieren.
 
