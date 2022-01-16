@@ -4,9 +4,11 @@
 #include <Adafruit_SSD1306.h>
 #include "DHTesp.h"
 #include <Bounce2.h>
+#include <Adafruit_BMP085.h>
 
 #include "uvsensor.h"
 #include "dht11.h"
+#include "bmp180.h"
 
 // Taster auf D5 - GPIO14
 #define btnPin D5
@@ -21,8 +23,10 @@ Adafruit_SSD1306 display(OLED_RESET);
 const int DHT11_HUMIDITY = 1;
 const int DHT11_TEMP = 2;
 const int UV_SENSOR = 3;
+const int BMP180_PRESSURE = 4;
+const int BMP180_ALTITUDE = 5;
 
-const int MAX_SENSOR_VALUES = 3;
+const int MAX_SENSOR_VALUES = 5;
 
 int sensorValueIndex = 0;
 
@@ -47,6 +51,8 @@ void setup()   {
   // wenn der Taster gedrück wurde ist das Signal "LOW"
   button.setPressedState(LOW);
   displayValue("click me", "");
+
+  setupBmp180();
 }
 
 void loop() {
@@ -55,7 +61,7 @@ void loop() {
 
   // Wenn der Taster gedrück wurde, dann mache...
   if ( button.pressed() ) {
-    
+
     if (sensorValueIndex >= MAX_SENSOR_VALUES) {
       sensorValueIndex = 1;
     } else {
@@ -74,6 +80,12 @@ void loop() {
         break;
       case UV_SENSOR:
         displayValue("UV Sensor:", getUvSensorValue());
+        break;
+      case BMP180_PRESSURE:
+        displayValue("Pressure:", getBmp180Pressure());
+        break;
+      case BMP180_ALTITUDE:
+        displayValue("Altitude:", getBmp180Altitude());
         break;
       default:
         Serial.println("switch default");
