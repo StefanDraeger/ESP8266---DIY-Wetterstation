@@ -1,7 +1,7 @@
 
 ## DIY Wetterstation v2.0
 
-![DIY Wetterstation v2.0](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/platine_diy_weatherstation_v2_bestueckt)
+![DIY Wetterstation v2.0](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/platine_diy_weatherstation_v2_bestueckt.jpg)
 
 ### Bibliotheken
 Nachfolgend nun die benötigten Bibliotheken für die Programmierung in der [Arduino IDE](https://www.arduino.cc/en/software). Ich habe die Bibliotheken heruntergeladen und in mein Repository als ZIP-Datei übernommen. Das garantiert, dass die Version der Bibliothek funktioniert und nicht durch ein eventuelles Update durch den Entwickler einen Fehler aufweißt.
