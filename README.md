@@ -35,6 +35,11 @@ Hier nun ein paar Beispiele, wie du die einzelnen Sensoren / Aktoren auf der Pla
 	- [Ausgabe auf dem OLED Display](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/uv_sensor/uv_sensor_oled_display)
 - BMP180
 	- [auslesen der Werte](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/bmp180/simple_bmp180_program)
+- WiFi
+	- [Aufbau einer WiFi Verbindung](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/wifi/esp8266_simple_wifi_connection)
+	- [erstellen einer einfachen Webseite für Sensordaten]()
+	- [senden von Sensordaten an ThingSpeak]()
+
  
 
 
