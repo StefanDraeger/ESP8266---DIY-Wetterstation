@@ -11,9 +11,9 @@ Nachfolgend nun die benötigten Bibliotheken für die Programmierung in der [Ard
 - [Bounce2](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/libs/Bounce2)
    - als ZIP-Datei vom Repository [thomasfredericks / Bounce2](https://github.com/thomasfredericks/Bounce2) kopiert
  - [Adafruit SSD1306 OLED Display](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/libs/OLED)
-	 - als ZIP-Dateien von Repositories [adafruit / Adafruit-GFX-Library](https://github.com/adafruit/Adafruit-GFX-Library) & [stblassitude / Adafruit_SSD1306_Wemos_OLED](https://github.com/stblassitude/Adafruit_SSD1306_Wemos_OLED)
+	 - als ZIP-Dateien von Repositories [adafruit / Adafruit-GFX-Library](https://github.com/adafruit/Adafruit-GFX-Library) & [stblassitude / Adafruit_SSD1306_Wemos_OLED](https://github.com/stblassitude/Adafruit_SSD1306_Wemos_OLED) kopiert
  - [DHTesp](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/libs/DHT11)
-	 - als ZIP-Datei vom Respository [beegee-tokyo / DHTesp](https://github.com/beegee-tokyo/DHTesp)
+	 - als ZIP-Datei vom Respository [beegee-tokyo / DHTesp](https://github.com/beegee-tokyo/DHTesp) kopiert
  - [Adafruit BMP085](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/libs/BMP180)
 	 - als ZIP-Datei vom Repository [adafruit / Adafruit-BMP085-Library](https://github.com/adafruit/Adafruit-BMP085-Library) kopiert
 
