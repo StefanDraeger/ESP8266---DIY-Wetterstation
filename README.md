@@ -1,7 +1,7 @@
 
 ## DIY Wetterstation v2.0
 
-![DIY Wetterstation v2.0](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/platine_diy_weatherstation_v2_bestueckt.jpg)
+![DIY Wetterstation v2.0](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/diy_wetterstation_v2_0.jpg)
 
 ### Bibliotheken
 Nachfolgend nun die benötigten Bibliotheken für die Programmierung in der [Arduino IDE](https://www.arduino.cc/en/software). Ich habe die Bibliotheken heruntergeladen und in mein Repository als ZIP-Datei übernommen. Das garantiert, dass die Version der Bibliothek funktioniert und nicht durch ein eventuelles Update durch den Entwickler einen Fehler aufweißt.
@@ -18,27 +18,34 @@ Nachfolgend nun die benötigten Bibliotheken für die Programmierung in der [Ard
 Das Programm für die DIY Wetterstation in der Version 2 findest du auf diesem Respository im Ordner [DIY-Weatherstation-V2](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/DIY-Weatherstation-V2/diyWeatherstationV2). Dieses Programm  ist in der Arduino IDE entwickelt und zeigt per Knopfdruck auf dem OLED Display die verschiedenen Sensorwerte an.
 
 ### Mikrocontroller ESP8266 
-![enter image description here](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/esp8266.jpg)
+![Wemos D1 Mini - ESP8266](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/esp8266.jpg)
 #### Technische Daten
 
 ### Sensoren
 Auf der DIY Weatherstation V2 sind folgende Sensoren / Aktoren verbaut:
 
 #### OLED Display
-![enter image description here](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/oled_display.jpg)
+![0,49 Zoll OLED Display](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/oled_display.jpg)
 ##### Technische Daten
+##### Pinout
 #### DHT11 Sensor
-![enter image description here](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/dht11.jpg)
+![DHT11](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/dht11.jpg)
 ##### Technische Daten
+##### Pinout
 #### BMP180 Sensor
-![enter image description here](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/bmp180.jpg)
+![BMP180](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/bmp180.jpg)
 ##### Technische Daten
+##### Pinout
 #### UV-Sensor
-![enter image description here](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/uv_sensor.jpg)
+![UV Sensor](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/uv_sensor.jpg)
 ##### Technische Daten
+##### Pinout
 #### Piezo Buzzer
+##### Pinout
 #### Taster
+##### Pinout
 #### LED
+##### Pinout
 
 ### Beispiele
 Hier nun ein paar Beispiele, wie du die einzelnen Sensoren / Aktoren auf der Platine programmieren kannst. Und somit Stück für Stück die Funktionen der DIY Wetterstation V2 zu programmieren.
