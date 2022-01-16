@@ -1,4 +1,5 @@
 
+
 ## DIY Wetterstation v2.0
 
 ![DIY Wetterstation v2.0](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/diy_wetterstation_v2_0.jpg)
@@ -43,7 +44,16 @@ Hier nun ein paar Beispiele, wie du die einzelnen Sensoren / Aktoren auf der Pla
 ### Mikrocontroller ESP8266 
 ![Wemos D1 Mini - ESP8266](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/esp8266.jpg)
 #### Technische Daten
-
+|Bezeichnung|Wert  |
+|--|--|
+|Taktgeschwindigkeit|80 MHz / 160 MHz|
+|Betriebsspannung|3.3 V|
+|max. Stromstärke pro I/O Pin|20 mA|
+|max. Stromstärke 3.3V|50 mA|
+|Flash Speicher|4 Mbyte|
+|digitale Eingänge / Ausgänge|11|
+|digitale PWM Ausgänge|11|
+|analoge Eingänge / Ausgänge|1|
 ### Sensoren
 Auf der DIY Weatherstation V2 sind folgende Sensoren / Aktoren verbaut:
 
