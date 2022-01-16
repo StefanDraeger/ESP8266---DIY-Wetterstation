@@ -27,25 +27,84 @@ Auf der DIY Weatherstation V2 sind folgende Sensoren / Aktoren verbaut:
 #### OLED Display
 ![0,49 Zoll OLED Display](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/oled_display.jpg)
 ##### Technische Daten
+|Bezeichnung|Wert  |
+|--|--|
+|Abmaße  |0,49 Zoll  |
+|Auflösung|64x32|
+|Betriebsspannung  |3.0 V bis 5 V|
+|Anschluss  |I2C |
+
 ##### Pinout
 #### DHT11 Sensor
 ![DHT11](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/dht11.jpg)
 ##### Technische Daten
+|Bezeichnung|Wert  |
+|--|--|
+|Abmaße  |0,49 Zoll  |
+|Auflösung|64x32|
+|Betriebsspannung  |3.0 V bis 5 V|
+|Anschluss  |I2C |
+
 ##### Pinout
+|Bezeichnung|Pin  |
+|--|--|
+|Data|D6|
+|VCC|5 V|
+|GND|GND|
 #### BMP180 Sensor
 ![BMP180](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/bmp180.jpg)
 ##### Technische Daten
+|Bezeichnung|Wert  |
+|--|--|
+|Betriebsspannung|1.8 V bis 3.6 V|
+|Leistungsaufnahme|0,5µA bei 1Hz|
+|Genauigkeit|0.02 hPa|
+|Messbereich|300 hPa bis 1100 hPa|
 ##### Pinout
+|Bezeichnung|Pin  |
+|--|--|
+|VCC|3.3 V|
+|GND|GND|
+|SCL|D2|
+|SDA|D1|
+|3.3|--|
 #### UV-Sensor
 ![UV Sensor](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/uv_sensor.jpg)
 ##### Technische Daten
+|Bezeichnung|Wert  |
+|--|--|
+|Betriebsspannung|3.3 V|
+|max. Stromaufnahme|0,1µA |
 ##### Pinout
+|Bezeichnung|Pin  |
+|--|--|
+|VIN|--|
+|VCC|3.3 V|
+|GND|GND|
+|DATA|A0|
+|EN|--|
+
 #### Piezo Buzzer
+![Piezo Buzzer](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/piezo_buzzer.jpg)
 ##### Pinout
+|Bezeichnung|Pin  |
+|--|--|
+|+|D8|
+|-|GND|
 #### Taster
+![Taster](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/taster_pulldown.jpg)
 ##### Pinout
+|Bezeichnung|Pin  |
+|--|--|
+|Pin 1|5V|
+|Pin 2|D5|
 #### LED
+![Leuchtdiode](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/led_vorwiderstand.jpg)
 ##### Pinout
+|Bezeichnung|Pin  |
+|--|--|
+|Anode (+)|D4|
+|Kathode (-)|GND|
 
 ### Beispiele
 Hier nun ein paar Beispiele, wie du die einzelnen Sensoren / Aktoren auf der Platine programmieren kannst. Und somit Stück für Stück die Funktionen der DIY Wetterstation V2 zu programmieren.
@@ -69,41 +128,6 @@ Hier nun ein paar Beispiele, wie du die einzelnen Sensoren / Aktoren auf der Pla
 	- [Aufbau einer WiFi Verbindung](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/wifi/esp8266_simple_wifi_connection)
 	- [erstellen einer einfachen Webseite für Sensordaten]()
 	- [senden von Sensordaten an ThingSpeak]()
-
- 
-
-
-### Pinout der Sensoren / Aktoren
-
-![Pinout der DIY Wetterstation v2.0](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/diy_wetterstation_v2_0_pinout.jpg)
-
-|Sensor / Aktor|Wemos D1 Mini  ||Sensor / Aktor|Wemos D1 Mini  |
-|--|--|--|--|--|
-|**Buzzer**|||**Switch** |
-|GND|GND||Pin 1|5V|
-|+|D8||Pin 2|D5|
-||||||
-|**LED** |  ||**DHT11** |  |
-|Anode (+)|D4||Data|D6|
-|Kathode (-)|GND||VCC|5V|
-||||GND|GND|
-||||||
-|**OLED Display** |||**BMP180** |  |
-|GND|GND||VCC|3.3V|
-|VCC|3.3V||GND|GND|
-|SDA|D1||SCL|D2|
-|SCL|D2||SDA|D1|
-||||3.3|--|
-||||||
-|**UV-Sensor** |  |
-|VIN|--|
-|VCC|3.3V|
-|GND|GND|
-|DATA|A0|
-|EN|--|
-
-
-
 
 
 
