@@ -11,12 +11,14 @@ Nachfolgend nun die benötigten Bibliotheken für die Programmierung in der [Ard
 	 - als ZIP-Dateien von Repositories [adafruit / Adafruit-GFX-Library](https://github.com/adafruit/Adafruit-GFX-Library) & [stblassitude / Adafruit_SSD1306_Wemos_OLED](https://github.com/stblassitude/Adafruit_SSD1306_Wemos_OLED)
  - [DHTesp](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/libs/DHT11)
 	 - als ZIP-Datei vom Respository [beegee-tokyo / DHTesp](https://github.com/beegee-tokyo/DHTesp)
+ - [Adafruit BMP085](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/libs/BMP180)
+	 - als ZIP-Datei vom Repository [adafruit / Adafruit-BMP085-Library](https://github.com/adafruit/Adafruit-BMP085-Library) kopiert
 
 ### Programm
 Das Programm für die DIY Wetterstation in der Version 2 findest du auf diesem Respository im Ordner [DIY-Weatherstation-V2](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/DIY-Weatherstation-V2/diyWeatherstationV2). Dieses Programm  ist in der Arduino IDE entwickelt und zeigt per Knopfdruck auf dem OLED Display die verschiedenen Sensorwerte an.
 
 ### Beispiele
-Hier nun einpaar Beispiele wie du die einzelnen Sensoren / Aktoren auf der Platine programmieren kannst. Und somit Stück für Stück die Funktionen der DIY Wetterstation V2 kennenlernst.
+Hier nun ein paar Beispiele, wie du die einzelnen Sensoren / Aktoren auf der Platine programmieren kannst. Und somit Stück für Stück die Funktionen der DIY Wetterstation V2 zu programmieren.
 
 - Buzzer
 	- [Sirene](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/buzzer/buzzer_simple_sound)
@@ -31,6 +33,8 @@ Hier nun einpaar Beispiele wie du die einzelnen Sensoren / Aktoren auf der Plati
 - UV-Sensor
 	- [Ausgabe auf der seriellen Schnittstelle](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/uv_sensor/uv_sensor_serial)
 	- [Ausgabe auf dem OLED Display](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/uv_sensor/uv_sensor_oled_display)
+- BMP180
+	- [auslesen der Werte](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/bmp180/simple_bmp180_program)
  
 
 
@@ -49,7 +53,7 @@ Hier nun einpaar Beispiele wie du die einzelnen Sensoren / Aktoren auf der Plati
 |Kathode (-)|GND||VCC|5V|
 ||||GND|GND|
 ||||||
-|**OLED Display** |||**BMP280** |  |
+|**OLED Display** |||**BMP180** |  |
 |GND|GND||VCC|3.3V|
 |VCC|3.3V||GND|GND|
 |SDA|D1||SCL|D2|
