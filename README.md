@@ -2,7 +2,7 @@
 
 ## DIY Wetterstation v2.0
 
-![DIY Wetterstation v2.0](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/diy_wetterstation_v2_0.jpg)
+![DIY Wetterstation v2.0](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/platine_diy_weatherstation_v2_bestueckt.jpg)
 
 ### Programm
 Das Programm für die DIY Wetterstation in der Version 2 findest du auf diesem Respository im Ordner [DIY-Weatherstation-V2](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/DIY-Weatherstation-V2/diyWeatherstationV2). Dieses Programm  ist in der Arduino IDE entwickelt und zeigt per Knopfdruck auf dem OLED Display die verschiedenen Sensorwerte an.
