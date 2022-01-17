@@ -20,7 +20,10 @@ Nachfolgend nun die benötigten Bibliotheken für die Programmierung in der [Ard
 
 ### Beispiele
 Hier nun ein paar Beispiele, wie du die einzelnen Sensoren / Aktoren auf der Platine programmieren kannst. Und somit Stück für Stück die Funktionen der DIY Wetterstation V2 zu programmieren.
-
+- LED
+	- [blinken](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/led/led_blink)
+	- [fade Effekt](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/led/led_fade)
+	- [Taster für AN/AUS](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/led/led_switch)
 - Buzzer
 	- [Sirene](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/tree/main/examples/buzzer/buzzer_simple_sound)
 - Button
