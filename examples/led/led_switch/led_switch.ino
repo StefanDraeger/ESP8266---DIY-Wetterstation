@@ -10,10 +10,10 @@ void setup() {
 void loop() {
   // Wenn der Taster betätigt wird, dann...
   if(digitalRead(taster)==LOW){
-    // LED aktivieren
-    digitalWrite(led, HIGH);
-  } else {
     // LED deaktivieren
     digitalWrite(led, LOW);
+  } else {
+    // LED aktivieren
+    digitalWrite(led, HIGH);
   }
 }
