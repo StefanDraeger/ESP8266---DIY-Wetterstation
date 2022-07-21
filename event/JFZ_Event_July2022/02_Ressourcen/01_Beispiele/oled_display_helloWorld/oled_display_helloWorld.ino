@@ -2,7 +2,6 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
-#include <Bounce2.h>
 
 #define OLED_RESET 0
 Adafruit_SSD1306 display(OLED_RESET);
@@ -16,9 +15,9 @@ void setup()   {
   display.display();
 
   display.clearDisplay();
-  display.setTextSize(2);
+  display.setTextSize(1);
   display.setTextColor(WHITE);
-  display.setCursor(60, 5);
+  display.setCursor(60, 15);
   display.println("Hello!");
   display.display();
 

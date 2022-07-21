@@ -8,8 +8,8 @@
 #include "dht11.h"
 #include "bmp180.h"
 
-const char* ssid = ""; //SSID aus dem Router
-const char* password = ""; //Passwort für den Zugang zum WLAN
+const char* ssid = "FRITZBox7590GI_EXT";
+const char* password = "22894580214767401850";
 
 WiFiServer server(80);
 
@@ -59,12 +59,14 @@ void writeResponse(WiFiClient client) {
   
   client.println("<style>");
   client.println("table, th, td {border: 1px solid black; margin: 0px auto; width: auto;}");
+  client.println("h1 {text-align:center;}");
   client.println("#outer {margin:0px auto; width: 550px;}");
   client.println("</style>");
   
   client.println("<body>");
   client.println("<div id='outer'>");
-  client.println("<h1>DIY Weatherstation V2 - Sensordaten</h1>");
+  client.println("<h1>DIY Weatherstation V2</h1>");
+  client.println("<h1>Sensordaten</h1>");
   client.println("<table>");
   client.println("<thead>");
   client.println("<tr><th>Sensor</th><th>Wert</th></tr>");
@@ -78,10 +80,10 @@ void writeResponse(WiFiClient client) {
 
   client.println("<tr><td><b>BMP180</b></td><td></td></tr>");
   client.println("<tr><td>Temperatur</td><td>" + getBmp180Temperature() + " &#8451;</td></tr>");
-  client.println("<tr><td>Luftdruck</td><td>" + getBmp180Pressure() + " hPa</td></tr>");
+  client.println("<tr><td>Luftdruck</td><td>" + getBmp180Pressure() + " Pa</td></tr>");
 
   client.println("<tr><td><b>UV-Sensor</b></td><td></td></tr>");
-  client.println("<tr><td></td><td>" + getUvSensorValue() + " mW</td></tr>");
+  client.println("<tr><td></td><td>" + getUvSensorValue() + " mW/cm&sup2;</td></tr>");
 
   client.println("</body>");
   client.println("</table>");

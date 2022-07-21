@@ -5,18 +5,19 @@ WiFiServer server(80);
 void setup() {
   Serial.begin(115200); //Baudrate für die Serielle Geschwindigkeit.
   delay(10); //10ms. Warten damit die Seriele Kommunikation aufgebaut wurde.
+  Serial.println("");
   Serial.print("Aufbau der Verbindung zu: "); //Ausgabe der SSID auf der Seriellen Schnittstelle.
   Serial.println(ssid);
+  Serial.println("");
   WiFi.begin(ssid, password); //Initialisieren der Wifi Verbindung.
   while (WiFi.status() != WL_CONNECTED) { //Warten bis die Verbindung aufgebaut wurde.
     delay(500);
     //Einen Punkt auf der Seriellen Schnittstelle ausgeben so das der Benutzer erkennt dass, das Sketch noch läuft.
     Serial.print(".");
   }
+  Serial.println("");
   //Bei erfolgreicher Verbindung wird der folgende Text ausgeben.
-  Serial.print("Mit ");
-  Serial.print(ssid);
-  Serial.print("erfolgreich verbunden!");
+  Serial.println("Mit " + String(ssid) + " erfolgreich verbunden!");
   server.begin(); // Starten des Servers.
   Serial.println("Server gestartet"); //Ausgabe auf der Seriellen Schnittstelle das der Server gestartet wurde.
   // Ausgabe der IP Adresse
