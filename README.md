@@ -1,5 +1,6 @@
 
 
+
 ## DIY Wetterstation v2.0
 
 ![DIY Wetterstation v2.0](https://github.com/StefanDraeger/ESP8266---DIY-Wetterstation/blob/main/images/platine_diy_weatherstation_v2_bestueckt.jpg)
@@ -76,10 +77,11 @@ Auf der DIY Weatherstation V2 sind folgende Sensoren / Aktoren verbaut:
 ##### Technische Daten
 |Bezeichnung|Wert  |
 |--|--|
-|Abmaße  |0,49 Zoll  |
-|Auflösung|64x32|
-|Betriebsspannung  |3.0 V bis 5 V|
-|Anschluss  |I2C |
+|Messbereich rel. Luftfeuchtigkeit  |20 % bis 90 %|
+|Toleranz rel. Luftfeuchtigkeit|±5 %|
+|Messbereich Temperatur| 0 °C bis 60 °C|
+|Toleranz Temperatur |±2 °C|
+|Betriebspannung |5 V|
 
 ##### Pinout
 |Bezeichnung|Pin  |
