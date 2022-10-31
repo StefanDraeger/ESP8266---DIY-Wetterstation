@@ -1,0 +1,9 @@
+{
+  "cpu": {
+    "fqbn": "esp8266:esp8266:d1_mini:baud=921600,dbg=Disabled,eesz=4M,exception=disabled,ip=lm2f,lvl=None____,vt=flash,wipe=none,xtal=80",
+    "name": "ESP8266 LOLIN(WEMOS) D1 R2 \u0026 mini",
+    "type": "serial"
+  },
+  "secrets": [],
+  "included_libs": []
+}
